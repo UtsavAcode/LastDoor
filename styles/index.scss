@@ -7,11 +7,18 @@
 }
 
 body {
+  height: 100vh;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "header"
     "content";
+  header {
+    height: 52px;
+  }
+  main {
+    grid-area: content;
+  }
 }
 
 .navbar {
@@ -24,6 +31,7 @@ body {
   font-weight: 300;
   font-size: 14px;
   position: relative;
+  z-index: 2;
   .nav_item {
     color: $white;
     float: right;
@@ -52,5 +60,8 @@ body {
 }
 
 .content {
+  z-index: -1;
+  height: 100vh;
   grid-area: content;
+  background-color: $content_background;
 }
