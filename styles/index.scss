@@ -1,0 +1,56 @@
+@import "var";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "header"
+    "content";
+}
+
+.navbar {
+  grid-area: header;
+  height: 52px;
+  background-color: $nav_background;
+  display: block;
+  padding-right: 120px;
+  font-family: $nav_font;
+  font-weight: 300;
+  font-size: 14px;
+  position: relative;
+  .nav_item {
+    color: $white;
+    float: right;
+    padding: 20px 14px;
+    height: 100%;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .nav_logo {
+    background-color: $white;
+    width: 268px;
+    height: 125px;
+    border-radius: 0px 0px 40px 40px;
+    position: absolute;
+    left: 18%;
+
+    img {
+      position: absolute;
+      top: 19%;
+      left: 7%;
+    }
+  }
+}
+
+.content {
+  grid-area: content;
+}
