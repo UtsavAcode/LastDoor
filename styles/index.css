@@ -45,7 +45,7 @@ body main {
   height: 125px;
   border-radius: 0px 0px 40px 40px;
   position: absolute;
-  left: 10%;
+  left: 11.5%;
 }
 .navbar .nav_logo img {
   position: absolute;
@@ -55,7 +55,7 @@ body main {
 
 .content {
   z-index: -1;
-  height: 100vh;
+  height: 85vh;
   position: relative;
   grid-area: content;
   background-color: #213e5f;
@@ -67,7 +67,7 @@ body main {
 }
 .content .content_text {
   position: absolute;
-  left: 10%;
+  left: 11.5%;
   top: 15%;
 }
 .content .content_heading {
@@ -109,5 +109,26 @@ body main {
 }
 .content .content_image {
   grid-area: contents;
-  height: 802px;
+  position: relative;
+}
+.content .content_image .hearts {
+  opacity: 0.2;
+  position: relative;
+  top: -9.5%;
+  left: 4.1%;
+}
+.content .content_image .content_tab {
+  position: absolute;
+  top: 20%;
+  left: 62.5%;
+}
+.content .content_image .content_tab1 {
+  position: absolute;
+  top: 20%;
+  left: 56.5%;
+}
+.content .content_image .content_mouth {
+  position: absolute;
+  left: 49.9%;
+  top: -25%;
 }/*# sourceMappingURL=index.css.map */
