@@ -27,9 +27,9 @@ body {
   background-color: $nav_background;
   display: block;
   padding-right: 120px;
-  font-family: $nav_font;
-  font-weight: 300;
-  font-size: 14px;
+  font-family: $main_font;
+  font-weight: 500;
+  font-size: 15px;
   position: relative;
   z-index: 2;
   .nav_item {
@@ -49,8 +49,7 @@ body {
     height: 125px;
     border-radius: 0px 0px 40px 40px;
     position: absolute;
-    left: 18%;
-
+    left: 10%;
     img {
       position: absolute;
       top: 19%;
@@ -62,6 +61,65 @@ body {
 .content {
   z-index: -1;
   height: 100vh;
+  position: relative;
   grid-area: content;
   background-color: $content_background;
+  color: $white;
+  font-family: $heading_font;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: content contents;
+
+  @mixin text {
+    font-size: 52px;
+    font-weight: 600;
+    color: $content_heading;
+  }
+  .content_text {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+  }
+
+  .content_heading {
+    @include text;
+  }
+  .content_desc {
+    font-size: 62px;
+    font-weight: 600;
+    color: $white;
+  }
+
+  .content_heading,
+  .content_desc {
+    line-height: 86%;
+  }
+  .content_middle {
+    @include text;
+    padding-top: 10px;
+  }
+
+  .learn_more {
+    height: 71px;
+    width: 165px;
+    background-color: $learn_more;
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: $white;
+    margin: 15px 0px 0px 0px;
+  }
+
+  .content_end {
+    font-family: $heading_font;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+  .content_image {
+    grid-area: contents;
+    height: 802px;
+  }
 }
