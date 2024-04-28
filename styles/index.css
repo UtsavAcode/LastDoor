@@ -160,7 +160,7 @@ body main {
   font-family: "Barlow", sans-serif;
 }
 .product .product_desc {
-  padding: 0.3rem 0 0 0;
+  padding: 0.7rem 0 0 0;
   position: relative;
   left: 11.9%;
 }
@@ -172,4 +172,19 @@ body main {
 .product .product_desc .product_about {
   font-size: 26px;
   color: #545759;
+}
+.product .product_desc .product_image {
+  position: relative;
+  top: -12rem;
+  left: 56rem;
+}
+.product .product_desc .product_image .product_c5 {
+  position: absolute;
+  left: -1.4rem;
+  top: 12rem;
+}
+.product .product_desc .product_image .product_fruit {
+  position: absolute;
+  top: 9rem;
+  left: 5.6rem;
 }/*# sourceMappingURL=index.css.map */
