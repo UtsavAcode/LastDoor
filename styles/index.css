@@ -45,7 +45,7 @@ body main {
   height: 125px;
   border-radius: 0px 0px 40px 40px;
   position: absolute;
-  left: 11.5%;
+  left: 11.9%;
 }
 .navbar .nav_logo img {
   position: absolute;
@@ -54,20 +54,21 @@ body main {
 }
 
 .content {
-  z-index: -1;
   height: 85vh;
   position: relative;
   grid-area: content;
   background-color: #213e5f;
+  background-image: url(../assets/HEARTS.png);
+  background-blend-mode: overlay;
   color: #ffffff;
+  background-position: 10rem -4rem;
+  background-repeat: no-repeat;
   font-family: "Barlow", sans-serif;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: content contents;
+  opacity: 0.9;
 }
 .content .content_text {
   position: absolute;
-  left: 11.5%;
+  left: 11.9%;
   top: 15%;
 }
 .content .content_heading {
@@ -101,6 +102,30 @@ body main {
   color: #ffffff;
   margin: 15px 0px 0px 0px;
 }
+.content .learn_more:hover {
+  cursor: pointer;
+  background-color: #71226B;
+}
+.content .content_button {
+  font-family: "Barlow", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  z-index: 22;
+  position: absolute;
+  left: 70%;
+  top: 1%;
+  width: 15rem;
+  text-align: center;
+  background-color: #71226B;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 2px 2px 3px 2px;
+}
+.content .content_button:hover {
+  cursor: pointer;
+  background-color: #58aea0;
+}
 .content .content_end {
   font-family: "Barlow", sans-serif;
   font-size: 30px;
@@ -108,27 +133,23 @@ body main {
   margin-top: 10px;
 }
 .content .content_image {
-  grid-area: contents;
-  position: relative;
-}
-.content .content_image .hearts {
-  opacity: 0.2;
-  position: relative;
-  top: -9.5%;
-  left: 4.1%;
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
 }
 .content .content_image .content_tab {
-  position: absolute;
-  top: 20%;
-  left: 62.5%;
+  position: relative;
+  top: 8rem;
+  left: 18.9rem;
+  right: 0;
 }
 .content .content_image .content_tab1 {
-  position: absolute;
-  top: 20%;
-  left: 56.5%;
+  position: relative;
+  top: 8rem;
+  left: -10rem;
 }
 .content .content_image .content_mouth {
-  position: absolute;
-  left: 49.9%;
-  top: -25%;
+  position: relative;
+  left: 6.4rem;
+  top: -33.6rem;
 }/*# sourceMappingURL=index.css.map */
