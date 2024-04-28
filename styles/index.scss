@@ -70,7 +70,6 @@ body {
   background-position: 9rem -5rem;
   background-repeat: no-repeat;
   font-family: $heading_font;
-  opacity: 0.9;
   @mixin text {
     font-size: 52px;
     font-weight: 600;
@@ -228,8 +227,24 @@ body {
         .product_for_explain {
           font-size: 28px;
           color: $for_explain;
-          margin-right: 2rem;
+          margin-right: 1.8rem;
         }
+      }
+    }
+
+    .product_learn_more {
+      background-color: $learn_more;
+      width: 42rem;
+      text-align: center;
+      padding:14px; 
+      margin-top: 2.5rem;
+      margin-left: 1rem;
+      border-radius: 0.5rem;
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 37px;
+        font-weight: 500;
       }
     }
   }

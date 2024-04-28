@@ -65,7 +65,6 @@ body main {
   background-position: 9rem -5rem;
   background-repeat: no-repeat;
   font-family: "Barlow", sans-serif;
-  opacity: 0.9;
 }
 .hero .hero_text {
   position: absolute;
@@ -210,5 +209,20 @@ body main {
 .product .product_desc .product_for .product_for_extend .product_for_explain {
   font-size: 28px;
   color: #424548;
-  margin-right: 2rem;
+  margin-right: 1.8rem;
+}
+.product .product_desc .product_learn_more {
+  background-color: #973f91;
+  width: 42rem;
+  text-align: center;
+  padding: 14px;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+.product .product_desc .product_learn_more a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 37px;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */
