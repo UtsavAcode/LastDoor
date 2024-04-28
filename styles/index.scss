@@ -179,14 +179,20 @@ body {
     left: 11.9%;
 
     .product_head {
-      font-size: 56px;
-      font-weight: 500;
+      font-size: 55px;
+      font-weight: 600;
       color: $product_head;
     }
 
     .product_about {
       font-size: 26px;
       color: $product_about;
+    }
+
+    .product_for_container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
 
     .product_image {
@@ -202,6 +208,28 @@ body {
         position: absolute;
         top: 9rem;
         left: 5.6rem;
+      }
+    }
+    .product_for {
+      position: relative;
+      top: -11.4rem;
+
+      h1 {
+        font-size: 55px;
+        font-weight: 600;
+        color: $product_head;
+      }
+
+      .product_for_extend {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .product_for_explain {
+          font-size: 28px;
+          color: $for_explain;
+          margin-right: 2rem;
+        }
       }
     }
   }
