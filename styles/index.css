@@ -157,15 +157,19 @@ body main {
 
 .product {
   overflow: hidden;
+  font-family: "Barlow", sans-serif;
 }
 .product .product_desc {
-  padding: 2rem 0 0 0;
+  padding: 0.3rem 0 0 0;
   position: relative;
   left: 11.9%;
 }
 .product .product_desc .product_head {
-  font-family: "Barlow", sans-serif;
   font-size: 56px;
   font-weight: 500;
   color: #58aea0;
+}
+.product .product_desc .product_about {
+  font-size: 26px;
+  color: #545759;
 }/*# sourceMappingURL=index.css.map */
