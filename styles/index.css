@@ -54,15 +54,15 @@ body main {
 }
 
 .hero {
-  height: 82vh;
+  height: 74.5vh;
   position: relative;
   padding-bottom: 10px;
   grid-area: content;
-  background-color: #213e5f;
+  background: #213e5f;
   background-image: url(../assets/HEARTS.png);
   background-blend-mode: overlay;
   color: #ffffff;
-  background-position: 9rem -5rem;
+  background-position: 9rem -4rem;
   background-repeat: no-repeat;
   font-family: "Barlow", sans-serif;
 }
@@ -72,13 +72,13 @@ body main {
   top: 15%;
 }
 .hero .hero_heading {
-  font-size: 52px;
+  font-size: 45px;
   font-weight: 600;
   color: #b3c9e2;
 }
 .hero .hero_desc {
-  font-size: 62px;
-  font-weight: 600;
+  font-size: 52px;
+  font-weight: 550;
   color: #ffffff;
 }
 .hero .hero_heading,
@@ -86,22 +86,22 @@ body main {
   line-height: 86%;
 }
 .hero .hero_middle {
-  font-size: 52px;
+  font-size: 45px;
   font-weight: 600;
   color: #b3c9e2;
   padding-top: 10px;
   letter-spacing: -3;
 }
 .hero .learn_more {
-  height: 71px;
+  height: 59px;
   width: 165px;
   background-color: #973f91;
   border: none;
   border-radius: 5px;
-  font-size: 21px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 550;
   color: #ffffff;
-  margin: 15px 0px 0px 0px;
+  margin: 8px 0px 0px 0px;
 }
 .hero .learn_more:hover {
   cursor: pointer;
@@ -114,14 +114,14 @@ body main {
   z-index: 22;
   position: absolute;
   left: 70%;
-  top: 1%;
+  top: 3%;
   width: 15rem;
   text-align: center;
-  background-color: #71226b;
+  background-color: #64baaf;
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   color: #ffffff;
-  padding: 2px 2px 3px 2px;
+  padding: 5px 5px 5px 5px;
 }
 .hero .hero_button:hover {
   cursor: pointer;
@@ -129,9 +129,9 @@ body main {
 }
 .hero .hero_end {
   font-family: "Barlow", sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  margin-top: 10px;
+  font-size: 26px;
+  font-weight: 240;
+  margin-top: 4px;
 }
 .hero .hero_image {
   position: absolute;
@@ -140,22 +140,25 @@ body main {
 }
 .hero .hero_image .hero_tab {
   position: relative;
-  top: 6rem;
+  top: 8rem;
   left: 18.8rem;
 }
 .hero .hero_image .hero_tab1 {
   position: relative;
-  top: 6rem;
+  top: 8rem;
   left: -10rem;
 }
 .hero .hero_image .hero_mouth {
   position: relative;
   left: 6.4rem;
-  top: -35.6rem;
+  top: -33.6rem;
 }
 
 .product {
   overflow: hidden;
+  height: 44.2rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   font-family: "Barlow", sans-serif;
 }
 .product .product_desc {
@@ -164,9 +167,10 @@ body main {
   left: 11.9%;
 }
 .product .product_desc .product_head {
-  font-size: 55px;
-  font-weight: 600;
+  font-size: 49px;
+  font-weight: 550;
   color: #58aea0;
+  margin-top: 2rem;
 }
 .product .product_desc .product_about {
   font-size: 26px;
@@ -179,7 +183,7 @@ body main {
 }
 .product .product_desc .product_image {
   position: relative;
-  top: -12rem;
+  top: -13rem;
   left: 56rem;
 }
 .product .product_desc .product_image .product_c5 {
@@ -194,11 +198,11 @@ body main {
 }
 .product .product_desc .product_for {
   position: relative;
-  top: -11.4rem;
+  top: -14rem;
 }
 .product .product_desc .product_for h1 {
-  font-size: 55px;
-  font-weight: 600;
+  font-size: 49px;
+  font-weight: 550;
   color: #58aea0;
 }
 .product .product_desc .product_for .product_for_extend {
@@ -216,7 +220,7 @@ body main {
   width: 42rem;
   text-align: center;
   padding: 14px;
-  margin-top: 2.5rem;
+  margin-top: 1.6rem;
   margin-left: 1rem;
   border-radius: 0.5rem;
 }
@@ -225,4 +229,145 @@ body main {
   color: #ffffff;
   font-size: 37px;
   font-weight: 500;
+}
+.product .product_desc .product_learn_more:hover {
+  background-color: #71226b;
+}
+
+.services {
+  overflow: hidden;
+  height: 100vh;
+  margin-top: 3.5rem;
+  font-family: "Barlow", sans-serif;
+}
+.services .services_heading {
+  position: relative;
+  left: 11.9%;
+  font-size: 48px;
+  font-weight: 550;
+  line-height: 0.9;
+  color: #58aea0;
+}
+.services .services_payment {
+  position: absolute;
+  left: 10.5rem;
+  top: 92rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.services .services_payment img {
+  height: 19.5rem;
+}
+.services .services_payment_detail {
+  left: 2rem;
+  top: 0.5;
+  position: relative;
+}
+.services .services_payment_detail .service_payment_heading {
+  font-family: "Barlow", sans-serif;
+  color: #973f91;
+  font-size: 35px;
+  font-weight: 700;
+}
+.services .services_payment_detail .services_payment_about {
+  font-size: 26px;
+  font-weight: 200;
+  color: #545759;
+}
+.services .services_payment_detail .services_terms {
+  color: #545759;
+  font-size: 12px;
+  margin-top: 0.5rem;
+  line-height: 1;
+  font-weight: 200;
+}
+.services .services_payment_detail .services_terms a {
+  text-decoration: none;
+  color: #2069b3;
+}
+.services .service_plan {
+  margin: 22.5rem 0 0 11rem;
+}
+.services .service_plan .plan_head {
+  color: #973f91;
+  font-weight: 600;
+  font-size: 24px;
+}
+.services .service_plan .plan_coverage {
+  font-size: 12px;
+  font-weight: 300;
+  color: #545759;
+}
+.services .savings_learn_more {
+  background-color: #973f91;
+  width: 18rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 2.2rem 0 0 11rem;
+  border-radius: 6px;
+}
+.services .savings_learn_more:hover {
+  cursor: pointer;
+  background-color: #71226b;
+}
+.services .savings_learn_more a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25.2px;
+  font-weight: 600;
+}
+
+.safety {
+  background-color: #2069b3;
+  height: 54px;
+  position: relative;
+  top: -3.5rem;
+  font-family: "Barlow", sans-serif;
+}
+.safety .safety_info {
+  color: #ffffff;
+  margin: 0 0 0 11rem;
+  padding: 0.9rem 0 0 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.safety .safety_box {
+  position: relative;
+  top: -1.8rem;
+  left: 70rem;
+}
+.safety .safety_arrow {
+  position: relative;
+  top: -2.2rem;
+  left: 67.5rem;
+}
+.safety .safety_arrow:hover {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.sympazin {
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  height: 400vh;
+}
+.sympazin .sympazin_details {
+  position: absolute;
+  left: 11rem;
+  top: -2rem;
+}
+.sympazin .sympazin_details .sympazin_question {
+  color: #427bbf;
+  font-size: 21px;
+  font-weight: 600;
+}
+.sympazin .sympazin_details .sympazin_answers {
+  font-size: 20px;
+  color: #545759;
+  margin-bottom: 1.8rem;
+}
+.sympazin .sympazin_details ul li {
+  list-style-position: inside;
 }/*# sourceMappingURL=index.css.map */

@@ -59,19 +59,22 @@ body {
 }
 
 .hero {
-  height: 82vh;
+  height: 74.5vh;
   position: relative;
   padding-bottom: 10px;
   grid-area: content;
-  background-color: $hero_background;
+  // background-color: $hero_background;
+  background: $hero_background;
   background-image: url(../assets/HEARTS.png);
   background-blend-mode: overlay;
   color: $white;
-  background-position: 9rem -5rem;
+
+  background-position: 9rem -4rem;
   background-repeat: no-repeat;
   font-family: $heading_font;
+
   @mixin text {
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 600;
     color: $hero_heading;
   }
@@ -85,8 +88,8 @@ body {
     @include text;
   }
   .hero_desc {
-    font-size: 62px;
-    font-weight: 600;
+    font-size: 52px;
+    font-weight: 550;
     color: $white;
   }
 
@@ -101,15 +104,15 @@ body {
   }
 
   .learn_more {
-    height: 71px;
+    height: 59px;
     width: 165px;
     background-color: $learn_more;
     border: none;
     border-radius: 5px;
-    font-size: 21px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 550;
     color: $white;
-    margin: 15px 0px 0px 0px;
+    margin: 8px 0px 0px 0px;
   }
   .learn_more:hover {
     cursor: pointer;
@@ -123,14 +126,14 @@ body {
     z-index: 22;
     position: absolute;
     left: 70%;
-    top: 1%;
+    top: 3%;
     width: 15rem;
     text-align: center;
-    background-color: $hover_more;
+    background-color: $hero_button;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     color: $white;
-    padding: 2px 2px 3px 2px;
+    padding: 5px 5px 5px 5px;
   }
 
   .hero_button:hover {
@@ -140,9 +143,9 @@ body {
 
   .hero_end {
     font-family: $heading_font;
-    font-size: 30px;
-    font-weight: 300;
-    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 240;
+    margin-top: 4px;
   }
 
   .hero_image {
@@ -152,25 +155,29 @@ body {
 
     .hero_tab {
       position: relative;
-      top: 6rem;
+      top: 8rem;
       left: 18.8rem;
     }
 
     .hero_tab1 {
       position: relative;
-      top: 6rem;
+      top: 8rem;
       left: -10rem;
     }
     .hero_mouth {
       position: relative;
       left: 6.4rem;
-      top: -35.6rem;
+      top: -33.6rem;
     }
   }
 }
 
 .product {
   overflow: hidden;
+  height: 44.2rem;
+
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   font-family: $heading_font;
   .product_desc {
     padding: 0.7rem 0 0 0;
@@ -178,9 +185,10 @@ body {
     left: 11.9%;
 
     .product_head {
-      font-size: 55px;
-      font-weight: 600;
-      color: $product_head;
+      font-size: 49px;
+      font-weight: 550;
+      color: $heading;
+      margin-top: 2rem;
     }
 
     .product_about {
@@ -196,7 +204,7 @@ body {
 
     .product_image {
       position: relative;
-      top: -12rem;
+      top: -13rem;
       left: 56rem;
       .product_c5 {
         position: absolute;
@@ -211,12 +219,12 @@ body {
     }
     .product_for {
       position: relative;
-      top: -11.4rem;
+      top: -14rem;
 
       h1 {
-        font-size: 55px;
-        font-weight: 600;
-        color: $product_head;
+        font-size: 49px;
+        font-weight: 550;
+        color: $heading;
       }
 
       .product_for_extend {
@@ -236,8 +244,8 @@ body {
       background-color: $learn_more;
       width: 42rem;
       text-align: center;
-      padding:14px; 
-      margin-top: 2.5rem;
+      padding: 14px;
+      margin-top: 1.6rem;
       margin-left: 1rem;
       border-radius: 0.5rem;
       a {
@@ -246,6 +254,162 @@ body {
         font-size: 37px;
         font-weight: 500;
       }
+    }
+
+    .product_learn_more:hover {
+      background-color: $hover_more;
+    }
+  }
+}
+
+.services {
+  overflow: hidden;
+  height: 100vh;
+  margin-top: 3.5rem;
+  font-family: $heading_font;
+
+  .services_heading {
+    position: relative;
+    left: 11.9%;
+    font-size: 48px;
+    font-weight: 550;
+    line-height: 0.9;
+    color: $heading;
+  }
+
+  .services_payment {
+    position: absolute;
+    left: 10.5rem;
+    top: 92rem;
+    img {
+      height: 19.5rem;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .services_payment_detail {
+    left: 2rem;
+    top: 0.5;
+    position: relative;
+    .service_payment_heading {
+      font-family: $heading_font;
+      color: $learn_more;
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .services_payment_about {
+      font-size: 26px;
+      font-weight: 200;
+      color: $product_about;
+    }
+
+    .services_terms {
+      color: $product_about;
+      font-size: 12px;
+      margin-top: 0.5rem;
+      line-height: 1;
+      font-weight: 200;
+
+      a {
+        text-decoration: none;
+        color: $nav_background;
+      }
+    }
+  }
+  .service_plan {
+    margin: 22.5rem 0 0 11rem;
+    .plan_head {
+      color: $learn_more;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .plan_coverage {
+      font-size: 12px;
+      font-weight: 300;
+      color: $product_about;
+    }
+  }
+
+  .savings_learn_more {
+    background-color: $learn_more;
+    width: 18rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 2.2rem 0 0 11rem;
+    border-radius: 6px;
+    &:hover {
+      cursor: pointer;
+      background-color: $hover_more;
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      font-size: 25.2px;
+      font-weight: 600;
+    }
+  }
+}
+
+.safety {
+  background-color: $nav_background;
+  height: 54px;
+  position: relative;
+  top: -3.5rem;
+  font-family: $heading_font;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  .safety_info {
+    color: $white;
+    margin: 0 0 0 11rem;
+    padding: 0.9rem 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .safety_box {
+    position: relative;
+    top: -1.8rem;
+    left: 70rem;
+  }
+
+  .safety_arrow {
+    position: relative;
+    top: -2.2rem;
+    left: 67.5rem;
+
+    &:hover {
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+  }
+}
+
+.sympazin {
+  position: relative;
+  font-family: $heading_font;
+  height: 400vh;
+  .sympazin_details {
+    position: absolute;
+    left: 11rem;
+    top: -2rem;
+
+    .sympazin_question {
+      color: $question;
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .sympazin_answers {
+      font-size: 20px;
+      color: $product_about;
+      margin-bottom: 1.8rem;
+    }
+
+    ul li {
+      list-style-position: inside;
     }
   }
 }
