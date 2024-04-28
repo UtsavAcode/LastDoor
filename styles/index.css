@@ -53,45 +53,47 @@ body main {
   left: 7%;
 }
 
-.content {
-  height: 85vh;
+.hero {
+  height: 82vh;
   position: relative;
+  padding-bottom: 10px;
   grid-area: content;
   background-color: #213e5f;
   background-image: url(../assets/HEARTS.png);
   background-blend-mode: overlay;
   color: #ffffff;
-  background-position: 10rem -4rem;
+  background-position: 9rem -5rem;
   background-repeat: no-repeat;
   font-family: "Barlow", sans-serif;
   opacity: 0.9;
 }
-.content .content_text {
+.hero .hero_text {
   position: absolute;
   left: 11.9%;
   top: 15%;
 }
-.content .content_heading {
+.hero .hero_heading {
   font-size: 52px;
   font-weight: 600;
   color: #b3c9e2;
 }
-.content .content_desc {
+.hero .hero_desc {
   font-size: 62px;
   font-weight: 600;
   color: #ffffff;
 }
-.content .content_heading,
-.content .content_desc {
+.hero .hero_heading,
+.hero .hero_desc {
   line-height: 86%;
 }
-.content .content_middle {
+.hero .hero_middle {
   font-size: 52px;
   font-weight: 600;
   color: #b3c9e2;
   padding-top: 10px;
+  letter-spacing: -3;
 }
-.content .learn_more {
+.hero .learn_more {
   height: 71px;
   width: 165px;
   background-color: #973f91;
@@ -102,11 +104,11 @@ body main {
   color: #ffffff;
   margin: 15px 0px 0px 0px;
 }
-.content .learn_more:hover {
+.hero .learn_more:hover {
   cursor: pointer;
-  background-color: #71226B;
+  background-color: #71226b;
 }
-.content .content_button {
+.hero .hero_button {
   font-family: "Barlow", sans-serif;
   font-size: 21px;
   font-weight: 500;
@@ -116,40 +118,54 @@ body main {
   top: 1%;
   width: 15rem;
   text-align: center;
-  background-color: #71226B;
+  background-color: #71226b;
   border: none;
   border-radius: 5px;
   color: #ffffff;
   padding: 2px 2px 3px 2px;
 }
-.content .content_button:hover {
+.hero .hero_button:hover {
   cursor: pointer;
   background-color: #58aea0;
 }
-.content .content_end {
+.hero .hero_end {
   font-family: "Barlow", sans-serif;
   font-size: 30px;
   font-weight: 300;
   margin-top: 10px;
 }
-.content .content_image {
+.hero .hero_image {
   position: absolute;
   left: 50%;
   overflow: hidden;
 }
-.content .content_image .content_tab {
+.hero .hero_image .hero_tab {
   position: relative;
-  top: 8rem;
-  left: 18.9rem;
-  right: 0;
+  top: 6rem;
+  left: 18.8rem;
 }
-.content .content_image .content_tab1 {
+.hero .hero_image .hero_tab1 {
   position: relative;
-  top: 8rem;
+  top: 6rem;
   left: -10rem;
 }
-.content .content_image .content_mouth {
+.hero .hero_image .hero_mouth {
   position: relative;
   left: 6.4rem;
-  top: -33.6rem;
+  top: -35.6rem;
+}
+
+.product {
+  overflow: hidden;
+}
+.product .product_desc {
+  padding: 2rem 0 0 0;
+  position: relative;
+  left: 11.9%;
+}
+.product .product_desc .product_head {
+  font-family: "Barlow", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  color: #58aea0;
 }/*# sourceMappingURL=index.css.map */

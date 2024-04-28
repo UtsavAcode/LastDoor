@@ -58,45 +58,47 @@ body {
   }
 }
 
-.content {
-  height: 85vh;
+.hero {
+  height: 82vh;
   position: relative;
+  padding-bottom: 10px;
   grid-area: content;
-  background-color: $content_background;
+  background-color: $hero_background;
   background-image: url(../assets/HEARTS.png);
   background-blend-mode: overlay;
   color: $white;
-  background-position: 10rem -4rem;
+  background-position: 9rem -5rem;
   background-repeat: no-repeat;
   font-family: $heading_font;
   opacity: 0.9;
   @mixin text {
     font-size: 52px;
     font-weight: 600;
-    color: $content_heading;
+    color: $hero_heading;
   }
-  .content_text {
+  .hero_text {
     position: absolute;
     left: 11.9%;
     top: 15%;
   }
 
-  .content_heading {
+  .hero_heading {
     @include text;
   }
-  .content_desc {
+  .hero_desc {
     font-size: 62px;
     font-weight: 600;
     color: $white;
   }
 
-  .content_heading,
-  .content_desc {
+  .hero_heading,
+  .hero_desc {
     line-height: 86%;
   }
-  .content_middle {
+  .hero_middle {
     @include text;
     padding-top: 10px;
+    letter-spacing: -3;
   }
 
   .learn_more {
@@ -115,7 +117,7 @@ body {
     background-color: $hover_more;
   }
 
-  .content_button {
+  .hero_button {
     font-family: $heading_font;
     font-size: 21px;
     font-weight: 500;
@@ -132,39 +134,54 @@ body {
     padding: 2px 2px 3px 2px;
   }
 
-  .content_button:hover {
+  .hero_button:hover {
     cursor: pointer;
-    background-color: $content_button_hover;
+    background-color: $hero_button_hover;
   }
 
-  .content_end {
+  .hero_end {
     font-family: $heading_font;
     font-size: 30px;
     font-weight: 300;
     margin-top: 10px;
   }
 
-  .content_image {
+  .hero_image {
     position: absolute;
     left: 50%;
     overflow: hidden;
 
-    .content_tab {
+    .hero_tab {
       position: relative;
-      top: 8rem;
-      left: 18.9rem;
-      right: 0;
+      top: 6rem;
+      left: 18.8rem;
     }
 
-    .content_tab1 {
+    .hero_tab1 {
       position: relative;
-      top: 8rem;
+      top: 6rem;
       left: -10rem;
     }
-    .content_mouth {
+    .hero_mouth {
       position: relative;
       left: 6.4rem;
-      top: -33.6rem;
+      top: -35.6rem;
+    }
+  }
+}
+
+.product {
+  overflow: hidden;
+  .product_desc {
+    padding: 2rem 0 0 0;
+    position: relative;
+    left: 11.9%;
+
+    .product_head {
+      font-family: $heading_font;
+      font-size: 56px;
+      font-weight: 500;
+      color: $product_head;
     }
   }
 }
