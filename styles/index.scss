@@ -12,7 +12,9 @@ body {
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "header"
-    "content";
+    "content"
+    "footer"
+    ;
   header {
     height: 52px;
   }
