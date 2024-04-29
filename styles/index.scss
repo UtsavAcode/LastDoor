@@ -57,7 +57,7 @@ body {
     background-color: $white;
     width: 268px;
     height: 125px;
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 45px 45px;
     position: absolute;
     left: 11.9%;
     img {
@@ -103,7 +103,6 @@ body {
   background-position: 9rem -4rem;
   background-repeat: no-repeat;
   font-family: $heading_font;
-
   @mixin text {
     font-size: 45px;
     font-weight: 600;
@@ -223,6 +222,12 @@ body {
     }
 
     .product_about {
+      font-size: 26px;
+      color: $product_about;
+    }
+
+    .product_about2 {
+      display: none;
       font-size: 26px;
       color: $product_about;
     }
@@ -399,6 +404,15 @@ body {
     font-size: 24px;
     font-weight: 600;
   }
+
+  .safety_info2 {
+    display: none;
+    color: $white;
+    margin: 0 0 0 11rem;
+    padding: 0.9rem 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
   .safety_box {
     position: relative;
     top: -1.8rem;
@@ -531,7 +545,7 @@ footer {
 
 @media screen and ((max-width: 398px) and (max-height:844px)) {
   body {
-    width: 90rem;
+    width: 96rem;
     header {
       position: sticky;
       top: 0;
@@ -554,7 +568,7 @@ footer {
       display: block;
     }
     .nav_logo {
-      height: 15rem;
+      height: 17rem;
       width: 30rem;
       img {
         height: 10rem;
@@ -566,7 +580,7 @@ footer {
       left: 47rem;
       margin-top: 7rem;
       width: 35rem;
-      height: 5rem;
+      height: 6rem;
       font-size: 3em;
       &:hover {
         background-color: $hero_button_hover;
@@ -575,12 +589,18 @@ footer {
   }
 
   .hero {
-    height: 450vh;
+    height: 225vh;
     overflow: hidden;
     background-image: url(../assets/HEARTS.png);
     background-size: cover;
-    background-position: -119rem -1rem;
+    background-color: $hero_background;
+    background-position: -130rem -12rem;
     background-blend-mode: overlay;
+
+    .hero_text {
+      position: relative;
+      top: 15%;
+    }
     .hero_heading,
     .hero_middle {
       font-size: 7em;
@@ -605,11 +625,11 @@ footer {
     .learn_more {
       width: 30rem;
       height: 8rem;
-      font-size: 4em;
+      font-size: 5em;
       font-weight: 550;
       font-family: $heading_font;
       transition: transform 0.3s ease;
-      border-radius: 1.3rem;
+      border-radius: 10px;
       margin-bottom: 1rem;
       &:hover {
         background-color: $hover_more;
@@ -619,7 +639,6 @@ footer {
     .hero_end {
       font-size: 4em;
       display: none;
-      
     }
 
     .hero_end2 {
@@ -631,24 +650,25 @@ footer {
     .hero_image {
       position: relative;
       left: -2rem;
-      top: 34rem;
+      top: -53.5%;
+
       .hero_tab {
         position: absolute;
-        left: 40rem;
-        height: 29rem;
+        left: 46rem;
+        height: 40rem;
       }
 
       .hero_tab1 {
         position: absolute;
-        left: 32rem;
-        height: 29rem;
+        left: 35rem;
+        height: 40rem;
       }
 
       .hero_mouth {
         position: relative;
-        top: -12rem;
+        top: -21rem;
         left: 25.8rem;
-        height: 50rem;
+        height: 70rem;
       }
     }
   }
@@ -658,5 +678,126 @@ footer {
     .services_card {
       display: none;
     }
+  }
+
+  .product {
+    height: 490vh;
+    .product_desc {
+      .product_head {
+        font-size: 9em;
+      }
+      .product_image {
+        position: relative;
+        top: 3rem;
+        left: 20%;
+
+        img {
+          height: 55rem;
+        }
+
+        .product_c5 {
+          height: 23rem;
+
+          position: absolute;
+          top: 68%;
+          left: -5%;
+        }
+
+        .info {
+          padding-left: 7rem;
+          font-size: 3em;
+        }
+
+        .product_fruit {
+          height: 50rem;
+          position: absolute;
+          top: 49%;
+          left: 17%;
+        }
+      }
+      .product_about {
+        display: none;
+      }
+      .product_about2 {
+        display: block;
+        font-size: 4.5em;
+        font-weight: 400;
+        margin-top: 1.5rem;
+      }
+      .product_for {
+        margin-top: 30rem;
+        .for_head {
+          font-size: 100px;
+          width: 60rem;
+        }
+
+        .product_for_container {
+          display: flex;
+          flex-direction: column;
+
+          .product_for_extend {
+            position: relative;
+            left: -20%;
+
+            img {
+              height: 30rem;
+            }
+            .product_for_explain {
+              font-size: 4em;
+              width: 30rem;
+            }
+          }
+        }
+        .product_learn_more {
+          height: 20rem;
+          width: 63rem;
+          margin-left: 5rem;
+          text-align: center;
+          padding: 2rem;
+          border-radius: 10px;
+          &:hover {
+            background-color: $hover_more;
+          }
+          a {
+            font-weight: 600;
+            font-size: 6em;
+          }
+        }
+      }
+    }
+  }
+
+  .safety {
+    position: sticky;
+    bottom: 0%;
+    height: 12rem;
+    .safety_info {
+      display: none;
+    }
+    .safety_info2 {
+      display: block;
+      font-size: 4em;
+    }
+
+    .safety_box {
+      position: relative;
+      top: -7rem;
+      height: 6rem;
+    }
+
+    .safety_arrow {
+      position: absolute;
+      height: 3rem;
+      top: 5rem;
+      left: 75%;
+    }
+  }
+
+  .sympazin {
+    display: none;
+  }
+
+  footer {
+    display: none;
   }
 }
