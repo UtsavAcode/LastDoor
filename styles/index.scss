@@ -13,8 +13,8 @@ body {
   grid-template-areas:
     "header"
     "content"
-    "footer"
-    ;
+    "footer";
+
   header {
     height: 52px;
   }
@@ -392,7 +392,7 @@ body {
 .sympazin {
   position: relative;
   font-family: $heading_font;
-  height: 400vh;
+  height: 342vh;
   .sympazin_details {
     position: absolute;
     left: 11rem;
@@ -404,14 +404,43 @@ body {
       font-weight: 600;
     }
 
-    .sympazin_answers {
+    @mixin answers {
       font-size: 20px;
       color: $product_about;
       margin-bottom: 1.8rem;
+    }
+    .sympazin_answers {
+      @include answers;
     }
 
     ul li {
       list-style-position: inside;
     }
   }
+}
+
+footer {
+  grid-area: footer;
+  height: 32vh;
+  background-color: $footer_color;
+  font-family: $heading_font;
+  .warning {
+    font-size: 19px;
+    font-weight: 700;
+    color: $product_about;
+    margin: 0.5rem 0 0 11rem;
+  }
+  a {
+    font-size: 19px;
+    font-weight: 600;
+    color: $question;
+  }
+
+  .footer_logo{
+    margin: 0.1rem 0 0 35rem;
+    img{
+      height: 3rem;
+    }
+  }
+  
 }

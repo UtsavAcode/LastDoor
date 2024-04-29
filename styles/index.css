@@ -351,7 +351,7 @@ body main {
 .sympazin {
   position: relative;
   font-family: "Barlow", sans-serif;
-  height: 400vh;
+  height: 342vh;
 }
 .sympazin .sympazin_details {
   position: absolute;
@@ -370,4 +370,28 @@ body main {
 }
 .sympazin .sympazin_details ul li {
   list-style-position: inside;
+}
+
+footer {
+  grid-area: footer;
+  height: 32vh;
+  background-color: #d2e6e2;
+  font-family: "Barlow", sans-serif;
+}
+footer .warning {
+  font-size: 19px;
+  font-weight: 700;
+  color: #545759;
+  margin: 0.5rem 0 0 11rem;
+}
+footer a {
+  font-size: 19px;
+  font-weight: 600;
+  color: #427bbf;
+}
+footer .footer_logo {
+  margin: 0.1rem 0 0 35rem;
+}
+footer .footer_logo img {
+  height: 3rem;
 }/*# sourceMappingURL=index.css.map */
