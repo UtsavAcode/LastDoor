@@ -436,11 +436,66 @@ footer {
     color: $question;
   }
 
-  .footer_logo{
-    margin: 0.1rem 0 0 35rem;
-    img{
+  .footer_logo {
+    margin: 0.1rem 0 0 34rem;
+    img {
       height: 3rem;
     }
   }
-  
+  .footer_reference {
+    margin: -2.1rem 0 0 11rem;
+
+    @mixin header {
+      color: $for_explain;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    // .reference_head {
+    //   @include header
+    // }
+
+    b {
+      @include header;
+    }
+
+    .reference_detail {
+      color: $for_explain;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+
+  .footer_links {
+    margin: 0.4rem 0 0 14.4rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+    }
+
+    li {
+      margin: 0 3rem 0 0;
+      padding-right: 3rem;
+
+      border-right: 1px solid $product_about;
+    }
+
+    li:nth-child(6) {
+      border: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  .footer_end {
+    font-family: $heading_font;
+    margin: 1rem 0 0 11rem;
+    p {
+      color: $for_explain;
+      font-weight: 400;
+    }
+  }
 }
