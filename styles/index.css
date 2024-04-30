@@ -174,7 +174,7 @@ body main {
   left: -10rem;
 }
 .hero .hero_image .hero_mouth {
-  position: relative;
+  position: absolute;
   left: 6.4rem;
   top: -33.6rem;
 }
