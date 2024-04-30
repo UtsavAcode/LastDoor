@@ -161,7 +161,6 @@ body main {
 .hero .hero_image {
   position: absolute;
   left: 50%;
-  overflow: hidden;
 }
 .hero .hero_image .hero_tab {
   position: relative;
@@ -174,7 +173,7 @@ body main {
   left: -10rem;
 }
 .hero .hero_image .hero_mouth {
-  position: absolute;
+  position: relative;
   left: 6.4rem;
   top: -33.6rem;
 }
