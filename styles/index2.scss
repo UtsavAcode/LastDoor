@@ -205,10 +205,9 @@ body {
 
 .product {
   overflow: hidden;
-  height: 44.2rem;
+  height: 26.2rem;
 
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   font-family: $heading_font;
   .product_desc {
     padding: 0.7rem 0 0 0;
@@ -455,6 +454,17 @@ body {
     }
     .sympazin_answers {
       @include answers;
+    }
+
+    .sympazin_box_answers{
+        @include answers;
+        border: 2px solid black;
+        padding: 1em;
+
+        p{
+            margin-bottom: 1rem;
+        }
+    
     }
 
     ul li {

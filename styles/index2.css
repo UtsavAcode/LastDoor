@@ -181,9 +181,8 @@ body main {
 
 .product {
   overflow: hidden;
-  height: 44.2rem;
+  height: 26.2rem;
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   font-family: "Barlow", sans-serif;
 }
 .product .product_desc {
@@ -405,6 +404,16 @@ body main {
   font-size: 20px;
   color: #545759;
   margin-bottom: 1.8rem;
+}
+.sympazin .sympazin_details .sympazin_box_answers {
+  font-size: 20px;
+  color: #545759;
+  margin-bottom: 1.8rem;
+  border: 2px solid black;
+  padding: 1em;
+}
+.sympazin .sympazin_details .sympazin_box_answers p {
+  margin-bottom: 1rem;
 }
 .sympazin .sympazin_details ul li {
   list-style-position: inside;
@@ -704,4 +713,4 @@ footer .footer_end p {
   footer {
     display: none;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index2.css.map */
