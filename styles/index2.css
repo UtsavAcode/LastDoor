@@ -483,7 +483,7 @@ footer .footer_end p {
   font-weight: 400;
 }
 
-@media screen and ((max-width: 398px) and (max-height: 844px)) {
+@media screen and ((max-width: 1500px) and (max-height: 845px)) {
   body {
     width: 96rem;
   }
@@ -652,14 +652,28 @@ footer .footer_end p {
     display: flex;
     flex-direction: column;
   }
-  .product .product_desc .product_for .product_for_container .product_for_extend {
+  .product
+    .product_desc
+    .product_for
+    .product_for_container
+    .product_for_extend {
     position: relative;
     left: -20%;
   }
-  .product .product_desc .product_for .product_for_container .product_for_extend img {
+  .product
+    .product_desc
+    .product_for
+    .product_for_container
+    .product_for_extend
+    img {
     height: 30rem;
   }
-  .product .product_desc .product_for .product_for_container .product_for_extend .product_for_explain {
+  .product
+    .product_desc
+    .product_for
+    .product_for_container
+    .product_for_extend
+    .product_for_explain {
     font-size: 4em;
     width: 30rem;
   }
@@ -710,4 +724,4 @@ footer .footer_end p {
   footer {
     display: none;
   }
-}/*# sourceMappingURL=index2.css.map */
+} /*# sourceMappingURL=index2.css.map */
