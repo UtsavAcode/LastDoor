@@ -602,14 +602,8 @@ footer .footer_end p {
     left: 25.8rem;
     height: 70rem;
   }
-  .services {
-    display: none;
-  }
-  .services .services_card {
-    display: none;
-  }
   .product {
-    height: 490vh;
+    height: 240vh;
   }
   .product .product_desc .product_head {
     font-size: 9em;
@@ -707,8 +701,11 @@ footer .footer_end p {
     top: 5rem;
     left: 75%;
   }
-  .sympazin {
-    display: none;
+  .sympazin .sympazin_question {
+    font-size: 10rem;
+  }
+  .sympazin .sympazin_answers {
+    font-size: 123px;
   }
   footer {
     display: none;
